@@ -1,0 +1,115 @@
+/* style.css */
+.header1 {
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding: 10px 20px;
+  font-size: 10px;
+  background-color: #ffffff;
+  color: #ff6803;
+  height: 100px;
+  width: 100%;
+  border-bottom: 1px solid #44444441;
+}
+#head2{
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  margin-top: 121px;
+  display: flex;
+  height: 100;
+  background-color: #ffffff;
+  border-bottom: 1px solid #44444441;
+}
+#topic{
+  width: 200px;
+}
+#main{
+  display: flex;
+}
+#sidebar {
+  position: fixed;
+  margin-top: 211px;
+  width: 250px;
+  border: 1px solid rgba(68, 68, 68, 0.25); /* More transparent border */
+  height: 500px;
+  padding: 15px; /* Added padding for better spacing */
+  background-color: #f8f8f8; /* Light background to make it distinct */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a raised effect */
+}
+
+#sidebar p {
+  font-size: 18px; /* Increase font size */
+  margin-bottom: 15px; /* Space below the title */
+  text-align: center; /* Center the title */
+}
+
+#menu {
+  background-color: #e0e0e0; /* Softer background color */
+  border-radius: 30px; /* Adjusted to be more subtle */
+  padding: 10px;
+  width: 90%; /* Full width of the sidebar */
+  display: flex;
+  flex-direction: column;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  gap: 10px; /* Space between topic items */
+}
+
+.topics {
+  background-color: #fff;
+  border-radius: 22px; /* Slightly rounded corners */
+  width: 100%; /* Ensure it fills the width of the menu */
+  padding: 10px; /* Padding inside each topic */
+  text-align: center;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for topic items */
+  cursor: pointer; /* Make the topics look clickable */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.topics p {
+  margin: 10px; 
+  font-size: 16px;
+}
+
+.topics:hover {
+  background-color: #f0f0f0; /* Light hover effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Add more shadow on hover */
+}
+
+/* Active button styling */
+.topics.active {
+  background-color: #007bff; /* Highlight color for active button */
+  color: #fff; /* White text for better contrast */
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.5); /* Enhanced shadow for active button */
+}
+
+.topics.active p {
+  color: #fff; /* Ensure paragraph text matches button color */
+}
+
+.container {
+    display: flex; /* Use flexbox to arrange the divs horizontally */
+    justify-content: center; /* Center the divs horizontally */
+    gap: 10px; /* Optional: Add some space between the divs */
+  }
+  
+  .element {
+    width: 50px;
+    text-align: center;
+    margin: 0 auto; /* This margin can be removed if you use flexbox */
+    background-color: lightblue; /* Optional: Add some background color */
+    padding: 10px; /* Optional: Add padding for better spacing */
+    border-radius: 5px; /* Optional: Round the corners */
+  }
+.ques{
+  font-family: Arial, Helvetica;
+  font-size: 40px;
+}
+.tst{
+  font-family: Arial, Helvetica;
+  font-size: 20px;
+}

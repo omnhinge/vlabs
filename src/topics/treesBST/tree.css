@@ -1,0 +1,57 @@
+.tree {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+  /* Node.css */
+.node-container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .node {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 14px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .node-value {
+    text-align: center;
+  }
+  
+  .children {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+  }
+  
+  /* Edge styling */
+  .edge {
+    position: absolute;
+    width: 1px;
+    height: 60px;
+    z-index: -1000;
+    background-color: #000;
+    top: -10px;
+  }
+  
+  .left-edge {
+    left: -40px; /* Adjust left position */
+    transform: rotate(-45deg);
+    transform-origin: top right;
+    z-index: -1000px;
+  }
+  
+  .right-edge {
+    right: -40px; /* Adjust right position */
+    transform: rotate(45deg);
+    transform-origin: top left;
+  }

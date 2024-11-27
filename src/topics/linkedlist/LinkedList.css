@@ -1,0 +1,35 @@
+/* src/LinkedList.css */
+
+.linked-list {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .input-section {
+    margin-bottom: 20px;
+  }
+  
+  .node {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    transition: transform 0.2s;
+  }
+  
+  .node:hover {
+    transform: scale(1.1);
+  }
+  
+  .list {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .count {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  

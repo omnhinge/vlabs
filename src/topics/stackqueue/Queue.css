@@ -1,0 +1,103 @@
+/* General Container Setup */
+.queue-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f4f6;
+  }
+  
+  .queue-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    width: 500px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    color: #333;
+    overflow: hidden;
+  }
+  
+  /* The queue should dynamically adjust its height based on number of items */
+  .queue {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    max-height: 450px; /* Set a max-height for the container */
+    overflow-y: auto;  /* Enable scrolling if content overflows */
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #ecf0f1;
+    padding: 10px;
+  }
+  
+  /* Styling for each Queue Item */
+  .queue-item {
+    width: 70px;
+    height: 60px;
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-right: 10px;
+    font-size: 18px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  /* Animation for the Enqueue operation (item entering from left) */
+  .queue-item-enter {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  
+  /* Animation for the Dequeue operation (item exiting to right) */
+  .queue-item-exit {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  
+  /* Styling for Queue Information (Size) */
+  .queue-info {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Styling for Buttons */
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .ope {
+    padding: 12px 18px;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .ope:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .queue-container {
+      width: 90%;
+    }
+  }
+  
